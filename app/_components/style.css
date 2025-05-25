@@ -1,0 +1,64 @@
+/* hero.css */
+
+.bg-curved-pattern {
+  background-size: 40px 40px;
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.bg-dash-pattern {
+  background-image: repeating-linear-gradient(
+    60deg,
+    rgba(77, 83, 196, 0.1) 0px,
+    rgba(77, 83, 196, 0.1) 2px,
+    transparent 3px,
+    transparent 8px
+  );
+}
+/* Floating animation with subtle 3D rotation and vertical movement */
+.floating {
+  animation: float 4s ease-in-out infinite;
+  transform-style: preserve-3d;
+  /* Optional: smooth transform origin for better 3D effect */
+  transform-origin: center;
+}
+
+.floating.delay-1000 {
+  animation-delay: 1s;
+}
+.floating.delay-2000 {
+  animation-delay: 2s;
+}
+.floating.delay-3000 {
+  animation-delay: 3s;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0) rotateX(0deg) rotateY(0deg);
+  }
+  50% {
+    transform: translateY(-10px) rotateX(10deg) rotateY(8deg);
+  }
+}
+
+.bg-curved-pattern-org {
+  background-size: 40px 40px;
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.bg-dash-pattern-org {
+  background-image: repeating-linear-gradient(
+    60deg,
+    rgba(242, 101, 34, 0.1) 0px,
+    /* #f26522 in rgba */ rgba(242, 101, 34, 0.1) 2px,
+    transparent 3px,
+    transparent 8px
+  );
+}
