@@ -1,3 +1,4 @@
+'use client'
 import Image from "next/image";
 import {
   FaAmbulance,
@@ -6,10 +7,12 @@ import {
   FaSyringe,
 } from "react-icons/fa";
 import ButterflyImage from "./ButterflyImage";
-
+import Link from "next/link";
+import { useRouter } from "next/navigation";
 const AboutUs = () => {
+  const router = useRouter();
   return (
-    <section className=" bg-white pb-8 md:pb-0">
+    <section className=" bg-white pb-8 md:pb-0 " id="about">
       <div className=" px-6  md:px-16 lg:px-28">
         <div className="flex flex-col md:flex-row gap-4 md:gap-12 lg:gap-12 items-center">
           {/* Updated Image Grid + Experience Card */}
@@ -83,6 +86,8 @@ const AboutUs = () => {
             <button
               className="md:mt-6 mt-5 px-8 py-3 bg-[var(--primary-orange)] text-white font-semibold rounded-lg shadow-md hover:bg-orange-600 transition-colors focus:outline-none focus:ring-2 focus:ring-[var(--primary-orange)] focus:ring-opacity-50"
               id="bottone1"
+              onClick={() => router.push("/about")}
+
             >
               Learn More
             </button>

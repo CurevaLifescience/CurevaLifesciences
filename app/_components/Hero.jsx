@@ -3,10 +3,10 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import "./style.css"; // keep your existing custom styles
-
+import { useRouter } from "next/navigation";
 export default function HeroSection() {
   const [offset, setOffset] = useState(0);
-
+const router = useRouter()
   useEffect(() => {
     const interval = setInterval(() => {
       setOffset((prev) => (prev === 0 ? 5 : 0));
@@ -44,7 +44,10 @@ export default function HeroSection() {
             wellness programs designed to elevate your well-being. Discover the
             future of care with India&apos;s top specialists.
           </p> */}
-          <button id="bottone1">
+          <button id="bottone1"
+          
+          onClick={() => router.push("#about")}
+>
             <strong>Discover features</strong>
           </button>
         </div>

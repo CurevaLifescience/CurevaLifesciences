@@ -2,11 +2,11 @@
 import { useState } from "react";
 import servicesData from "../../constants/servicesData";
 import ServiceCard from "./ServiceCard";
-
+import { useRouter } from "next/navigation";
 const Services = () => {
   const [startIndex, setStartIndex] = useState(0);
   const servicesPerPage = servicesData.length;
-
+const router = useRouter()
   const handleNext = () => {
     const nextIndex = startIndex + 1;
     if (nextIndex + servicesPerPage > servicesData.length) {
@@ -53,6 +53,8 @@ const Services = () => {
         <button
           className="w-fit bg-orange-600 text-white px-6 py-2 rounded-lg font-medium hover:bg-blue-700 transition"
           id="bottone1"
+          onClick={() => router.push("/services")}
+
         >
           All Services
         </button>
