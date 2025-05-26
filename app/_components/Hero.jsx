@@ -59,7 +59,7 @@ const router = useRouter()
             style={{ transform: `translateY(-${offset}px)` }}
           >
             <Image
-              src={"/hero.jpg"} // replace with your actual image path
+              src={"/img-lab-2.jpg"} // replace with your actual image path
               alt="Cureva Doctors"
               className="rounded-xl shadow-xl"
               width={700}

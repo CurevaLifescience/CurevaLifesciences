@@ -38,15 +38,19 @@ export default function Header() {
     >
       <div className="h-full flex items-center justify-between">
         {/* Left: Logo */}
-        <Link href="/" className="flex items-center gap-3">
+        <Link href="/" className="flex items-center justify-center  ">
           <Image
-            src="/logo.png"
+            src="/logo-transparent-png.png"
             alt="CUREVA Lifesciences"
-            width={140}
+            width={80}
             height={80}
-            className="object-contain"
+            className="object-contain -ml-2"
             priority
           />
+          <div className="flex flex-col -ml-1 justify-center font-bold leading-tight text-[#002540]  text-xl ">
+            <h2 className="">Cureva</h2>
+            <h2 >Lifesciences</h2>
+          </div>
         </Link>
 
         {/* Center: Desktop Nav */}

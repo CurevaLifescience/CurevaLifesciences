@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import Image from "next/image";
 import { FaCalendarAlt } from "react-icons/fa";
 import { MdChevronRight } from "react-icons/md";
 
@@ -61,7 +62,9 @@ export default function NewsSection() {
             >
               {/* Article Image */}
               <div className="relative h-40 overflow-hidden">
-                <img
+                <Image
+                width={250}
+                height={250}
                   src={article.image}
                   alt={article.title}
                   className="object-cover w-full h-full hover:scale-105 transition-transform duration-300"
@@ -73,7 +76,9 @@ export default function NewsSection() {
                 <div className="flex items-center justify-between mb-4">
                   <div className="flex items-center gap-3">
                     <div className="w-10 h-10 relative">
-                      <img
+                      <Image
+                      width={250}
+                      height={250}
                         src={article.author.avatar}
                         alt={article.author.name}
                         className="rounded-full object-cover w-full h-full"

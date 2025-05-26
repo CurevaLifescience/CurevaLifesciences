@@ -8,7 +8,7 @@ function ButterflyImage() {
       <div className="relative flex items-end justify-end ">
         <div className="md:w-[280px] md:h-[230px] w-[200px] h-[160px] overflow-hidden rounded-tr-[55px] rounded-br-[55px] rounded-bl-[55px] bg-white shadow-lg">
           <Image
-            src="/about.jpg"
+            src="/img-lab-3.jpg"
             alt="Medical team discussion"
             width={400}
             height={280}
@@ -21,7 +21,7 @@ function ButterflyImage() {
       <div className="relative flex items-end justify-start ">
         <div className="md:w-[380px] md:h-[280px] w-[200px] h-[200px] overflow-hidden rounded-tl-[55px] rounded-br-[55px] rounded-bl-[55px] bg-white shadow-lg">
           <Image
-            src="/about.jpg"
+            src="/img-2-doc.jpg"
             alt="Female medical professional"
             width={300}
             height={320}
@@ -34,7 +34,7 @@ function ButterflyImage() {
       <div className="relative flex justify-end items-start">
         <div className="md:w-[240px] md:h-[210px] w-[170px] h-[150px] overflow-hidden rounded-tl-[55px] rounded-tr-[55px] rounded-br-[55px] bg-white shadow-lg">
           <Image
-            src="/about.jpg"
+            src="/img-lab.jpg"
             alt="Doctor examining child with mother"
             width={340}
             height={240}
@@ -47,7 +47,7 @@ function ButterflyImage() {
       <div className="relative flex justify-start items-start">
         <div className="md:w-[230px] md:h-[240px] w-[170px] h-[190px] overflow-hidden rounded-tl-[55px] rounded-tr-[55px] rounded-bl-[55px] bg-white shadow-lg">
           <Image
-            src="/about.jpg"
+            src="/nurse.jpg"
             alt="Doctor examining child with mother"
             width={340}
             height={240}

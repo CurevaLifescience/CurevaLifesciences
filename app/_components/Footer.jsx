@@ -7,7 +7,20 @@ function Footer() {
     <footer className="bg-[var(--primary-blue)]">
       <div className="mx-auto max-w-5xl px-4 pt-16 sm:px-6 lg:px-8">
         <div className="flex justify-center text-teal-600">
-          <Image src={"/logo.png"} width={170} height={100} alt="logo" />
+          <Link href="/" className="flex items-center justify-center  ">
+            <Image
+              src="/logo-transparent-png.png"
+              alt="CUREVA Lifesciences"
+              width={80}
+              height={80}
+              className="object-contain -ml-2"
+              priority
+            />
+            <div className="flex flex-col -ml-1 justify-center font-bold leading-tight text-[#002540]  text-xl ">
+              <h2 className="">Cureva</h2>
+              <h2>Lifesciences</h2>
+            </div>
+          </Link>
         </div>
 
         <p className="mx-auto mt-6 max-w-2xl text-center text-sm leading-relaxed text-[var(--third-blue)]">
