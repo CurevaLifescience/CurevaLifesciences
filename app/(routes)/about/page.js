@@ -7,7 +7,7 @@ import React from 'react'
 
 function page() {
   return (
-    <div className='pt-[85px]'>
+    <div className='pt-[100px] md:pt-[85px]'>
       <AboutUs />
       {/* <TestimonialSection />
       <OurVision/> */}

@@ -1,8 +1,6 @@
 import { Mail, Phone, User, MessageCircle } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Card, CardContent } from "@/components/ui/card";
-import { Textarea } from "@/components/ui/textarea";
+
+import ContactUsForm from "./ContactUsForm";
 
 export default function ContactUs() {
   return (
@@ -28,45 +26,7 @@ export default function ContactUs() {
         <div className="grid md:grid-cols-2 gap-16 items-center ">
           {/* Left Side - Contact Form */}
           <div className="relative">
-            <Card className="bg-white border-purple-200 border-2  md:p-3 rounded-3xl shadow-xl lg:p-6">
-              <CardContent className="space-y-6 pt-2">
-                <div className="inline-block w-fit bg-dash-pattern-org px-4 py-1 text-2xl font-semibold text-[var(--primary-orange)] rounded-md">
-                  Contact us
-                </div>
-
-                <div className="space-y-4 pt-4">
-                  <Input
-                    placeholder="Your Name"
-                    type={"text"}
-                    className="h-12 rounded-xl border border-orange-300 text-gray-900 placeholder:text-gray-400 focus:outline-none focus:ring-0"
-                    icon={<User className="w-5 h-5 text-gray-400" />}
-                  />
-                  <Input
-                    placeholder="Phone Number"
-                    type={"number"}
-                    className="h-12 rounded-xl border border-orange-300 text-gray-900 placeholder:text-gray-400 focus:outline-none focus:ring-0"
-                    icon={<Phone className="w-5 h-5 text-gray-400" />}
-                  />
-                  <Input
-                    placeholder="Email Address"
-                    type={"email"}
-                    className="h-12 rounded-xl border border-orange-300 text-gray-900 placeholder:text-gray-400 focus:outline-none focus:ring-0"
-                    icon={<Mail className="w-5 h-5 text-gray-400" />}
-                  />
-                  <Textarea
-                    placeholder="Your Message"
-                    className="h-28 rounded-xl border border-orange-300 text-gray-900 placeholder:text-gray-400 focus:outline-none focus:ring-0"
-                  />
-                </div>
-
-                <Button
-                  className="w-full h-14 bg-orange-500 hover:bg-orange-600 text-white font-semibold rounded-xl text-lg mt-0"
-                  id="bottone1"
-                >
-                  Send Message
-                </Button>
-              </CardContent>
-            </Card>
+           <ContactUsForm />
           </div>
 
           {/* Right Side - Phone Illustration */}
