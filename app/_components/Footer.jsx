@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 function Footer() {
@@ -16,53 +17,53 @@ function Footer() {
 
         <ul className="mt-12 flex flex-wrap justify-center gap-6 md:gap-8 lg:gap-12">
           <li>
-            <a
+            <Link
               className="text-[var(--sec-blue)] transition hover:text-[var(--sec-blue)]/75"
-              href="#"
+              href="/"
             >
               {" "}
               Home{" "}
-            </a>
+            </Link>
           </li>
 
           <li>
-            <a
+            <Link
               className="text-[var(--sec-blue)] transition hover:text-[var(--sec-blue)]/75"
-              href="#"
+              href="/about"
             >
               {" "}
               About us{" "}
-            </a>
+            </Link>
           </li>
 
           <li>
-            <a
+            <Link
               className="text-[var(--sec-blue)] transition hover:text-[var(--sec-blue)]/75"
-              href="#"
+              href="/vision"
             >
               {" "}
               Vision{" "}
-            </a>
+            </Link>
           </li>
 
           <li>
-            <a
+            <Link
               className="text-[var(--sec-blue)] transition hover:text-[var(--sec-blue)]/75"
-              href="#"
+              href="/services"
             >
               {" "}
               Our Services{" "}
-            </a>
+            </Link>
           </li>
 
           <li>
-            <a
+            <Link
               className="text-[var(--sec-blue)] transition hover:text-[var(--sec-blue)]/75"
-              href="#"
+              href="/contact"
             >
               {" "}
               Contact us{" "}
-            </a>
+            </Link>
           </li>
         </ul>
 
