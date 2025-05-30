@@ -1,124 +1,77 @@
-import { Mail, Phone, User, MessageCircle } from "lucide-react";
+"use client";
+import {
+  Mail,
+  Phone,
+  User,
+  MessageCircle,
+  TimerIcon,
+  LocateIcon,
+} from "lucide-react";
 
 import ContactUsForm from "./ContactUsForm";
+import {
+  FaAddressBook,
+  FaAddressCard,
+  FaAmbulance,
+  FaStethoscope,
+  FaSyringe,
+  FaUserMd,
+} from "react-icons/fa";
+import { MdAddReaction, MdEmail } from "react-icons/md";
 
 export default function ContactUs() {
   return (
-    <section className="  px-6 md:px-16 lg:px-28 py-14 bg-[var(--primary-blue)] relative overflow-hidden">
-      {/* Decorative Background Elements */}
-
-      <div className="mx-auto lg:max-w-screen-md max-w-screen-xl text-start md:text-center ">
-        <h2 className="mb-6 text-2xl  font-extrabold ">
-          <div className="inline-block w-fit bg-dash-pattern-org px-4 py-1 font-semibold text-[var(--primary-orange)]  rounded-md">
-            Connect with us
-          </div>
-        </h2>
-        <h2 className="text-3xl md:text-4xl mb-4  font-bold text-[var(--third-blue)]">
-          Join Our Journey
-        </h2>
-        <p className=" text-gray-600 lg:mb-10 w-full sm:text-lg dark:text-gray-400">
-          We invite driven individuals, visionary collaborators, and
-          forward-thinking organizations to join us in shaping the future of
-          healthcare.
-        </p>
-      </div>
-      <div className="container mx-auto bg-[var(--primary-blue)] rounded-4xl ">
-        <div className="grid md:grid-cols-2 gap-16 items-center ">
-          {/* Left Side - Contact Form */}
-          <div className="relative">
-           <ContactUsForm />
+    <section className=" bg-white pb-8 md:pb-0 " id="about">
+      <div className=" px-6  md:px-16 lg:px-28">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4  md:gap-12 lg:gap-12 items-center">
+          {/* Updated Image Grid + Experience Card */}
+          <div className="w-full   ">
+            <ContactUsForm />
           </div>
 
-          {/* Right Side - Phone Illustration */}
-          <div className="relative flex justify-center">
-            {/* Decorative Phone UI retained as visual element */}
-            <div className="absolute top-0 left-16 w-16 h-16 bg-orange-500 rounded-full flex items-center justify-center z-10">
-              <svg
-                className="w-8 h-8 text-white"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={3}
-                  d="M5 13l4 4L19 7"
-                ></path>
-              </svg>
+          {/* Text Content */}
+          <div className=" col-span-1 mt-8 md:mt-3">
+            <div className="inline-block  w-fit bg-dash-pattern-org px-4 py-1 text-2xl font-semibold text-[var(--primary-orange)]  rounded-md">
+              Get in Touch
             </div>
-            <div className="absolute top-8 right-8 bg-blue-300 rounded-full px-4 py-2 flex items-center gap-2">
-              <MessageCircle className="w-4 h-4 text-white" />
-              <div className="w-8 h-1 bg-white rounded"></div>
-            </div>
-            <div className="relative">
-              <div className="w-80 h-[600px] bg-black rounded-[3rem] p-2">
-                <div className="w-full h-full bg-white rounded-[2.5rem] overflow-hidden relative">
-                  <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-32 h-6 bg-black rounded-b-2xl"></div>
-                  <div className="pt-8 px-6">
-                    <div className="text-center mb-4">
-                      <h3 className="text-orange-500 font-bold text-lg">
-                        CUREVA
-                      </h3>
-                    </div>
-                    <div className="grid grid-cols-4 gap-3 mb-6">
-                      {Array.from({ length: 12 }, (_, i) => (
-                        <div
-                          key={i}
-                          className={`aspect-square rounded-lg flex items-center justify-center text-sm font-medium ${
-                            i === 3
-                              ? "bg-orange-500 text-white"
-                              : "bg-blue-200 text-blue-800"
-                          }`}
-                        >
-                          {i + 1}
-                        </div>
-                      ))}
-                    </div>
-                    <div className="bg-indigo-600 rounded-xl p-4 mb-4 flex items-center justify-center">
-                      <Phone className="w-8 h-8 text-white" />
-                    </div>
-                    <div className="bg-blue-200 rounded-xl p-4 mb-4">
-                      <div className="flex items-center gap-3">
-                        <div className="w-8 h-2 bg-blue-600 rounded"></div>
-                        <div className="flex-1 space-y-1">
-                          <div className="w-full h-1 bg-blue-600 rounded"></div>
-                          <div className="w-3/4 h-1 bg-blue-600 rounded"></div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="bg-blue-200 rounded-xl p-4 flex items-center gap-3">
-                      <div className="w-12 h-12 bg-white rounded-lg"></div>
-                      <div className="flex-1 space-y-1">
-                        <div className="w-full h-1 bg-blue-600 rounded"></div>
-                        <div className="w-2/3 h-1 bg-blue-600 rounded"></div>
-                        <div className="w-1/2 h-1 bg-blue-600 rounded"></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+
+            <p className="mt-4 text-base sm:text-lg text-gray-600">
+              We invite driven individuals, visionary collaborators, and
+              forward-thinking organizations to join us in shaping the future of
+              healthcare.
+            </p>
+            <h2 className="mt-4 text-3xl md:text-3xl lg:text-3xl font-bold text-[var(--third-blue)] leading-tight">
+              Connect with us
+            </h2>
+
+            <div className="mt-2 text-base sm:text-lg  text-gray-600">
+              <div className="flex flex-row gap-2 items-center">
+                <TimerIcon className="h-4 w-4" /> Mon - Fri, 10:00AM-06:00PM
               </div>
-              <div className="absolute bottom-32 -right-8 w-16 h-16 bg-orange-500 rounded-xl flex items-center justify-center">
-                <Mail className="w-8 h-8 text-white" />
+              <div className="flex flex-row gap-2 items-center">
+                <MdEmail className="h-4 w-4 mt-1" />{" "}
+                curevalifesciences@gmail.com
+              </div>
+            </div>
+            <h2 className="mt-4 text-3xl md:text-3xl lg:text-3xl font-bold text-[var(--third-blue)] leading-tight">
+              Find us at the office
+            </h2>
+            <div className="mt-2 flex flex-row   gap-2  text-base sm:text-lg text-gray-600">
+              <FaAddressCard className="h-4 w-4 mt-[5px] " />
+              <div className="flex flex-row w-full  gap-2 items-center">
+ 
+                H. no. 250 Pancham Colony, Gaurela Road Pendra, Pendra,
+                Bilaspur(cgh), Pendra Road, Chattisgarh, India, 495119
               </div>
             </div>
 
-            {/* Character Illustration */}
-            {/* <div className="absolute bottom-0 right-0">
-                <div className="relative">
-                    <div className="w-32 h-48 relative">
-                    <div className="absolute top-0 left-8 w-16 h-16 bg-orange-300 rounded-full"></div>
-                    <div className="absolute top-0 left-8 w-16 h-12 bg-orange-500 rounded-t-full"></div>
-                    <div className="absolute top-12 left-6 w-20 h-24 bg-indigo-600 rounded-t-3xl"></div>
-                    <div className="absolute top-16 left-2 w-8 h-16 bg-orange-300 rounded-full transform -rotate-12"></div>
-                    <div className="absolute top-16 right-2 w-8 h-16 bg-orange-300 rounded-full transform rotate-45"></div>
-                    <div className="absolute bottom-0 left-8 w-6 h-20 bg-amber-800 rounded-full"></div>
-                    <div className="absolute bottom-0 right-8 w-6 h-20 bg-amber-800 rounded-full"></div>
-                    <div className="absolute bottom-0 left-6 w-10 h-4 bg-gray-800 rounded-full"></div>
-                    <div className="absolute bottom-0 right-6 w-10 h-4 bg-gray-800 rounded-full"></div>
-                    </div>
-                </div>
-                </div> */}
+            <button
+              className="md:mt-6 mt-5 px-8 py-3 bg-[var(--primary-orange)] text-white font-semibold rounded-lg shadow-md hover:bg-orange-600 transition-colors focus:outline-none focus:ring-2 focus:ring-[var(--primary-orange)] focus:ring-opacity-50"
+              id="bottone1"
+              onClick={() => router.push("/about")}
+            >
+              Learn More
+            </button>
           </div>
         </div>
       </div>

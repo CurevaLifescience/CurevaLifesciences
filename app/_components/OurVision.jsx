@@ -37,7 +37,7 @@ export default function OurVision() {
               {column.map((point, index) => (
                 <div
                   key={index}
-                  className={`rounded-lg shadow-lg p-4 bg-gray-100  transition-all ${point.border}`}
+                  className={`rounded-lg shadow-lg hover:shadow-2xl p-4 border  transition-all ${point.border}`}
                 >
                   <h4
                     className={`uppercase text-xs font-semibold mb-1 ${point.color}`}

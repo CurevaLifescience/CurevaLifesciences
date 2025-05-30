@@ -14,7 +14,7 @@ const membersData = [
   {
     name: "Karina Sahu" ,
     post: "Co founder",
-    about: "B.Pharmacy graduate and passionate wellness advocate, co-leading Cureva Lifesciences to drive innovation in healthcare and well-being.",
+    about: "D.Pharmacy graduate and passionate wellness advocate, co-leading Cureva Lifesciences to drive innovation in healthcare and well-being.",
     facebook: "/",
     instgram: "#",
     twitter: "#",
