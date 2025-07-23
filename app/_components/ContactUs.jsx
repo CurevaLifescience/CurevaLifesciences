@@ -50,7 +50,7 @@ export default function ContactUs() {
               </div>
               <div className="flex flex-row gap-2 items-center">
                 <MdEmail className="h-4 w-4 mt-1" />{" "}
-                curevalifesciences@gmail.com
+               contact@curevalifes.in
               </div>
             </div>
             <h2 className="mt-4 text-3xl md:text-3xl lg:text-3xl font-bold text-[var(--third-blue)] leading-tight">

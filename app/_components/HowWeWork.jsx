@@ -110,7 +110,7 @@ function HowWeWork() {
               </p>
               <button
                 onClick={() => router.push("/contact")}
-                className="mt-8 flex items-center justify-between rounded-lg p-2 font-sans group-hover:text-[#f26522] transition-all ease-in-out bg-[#f4f7fe] text-base font-medium text-[#20227b] hover:bg-gray-50 group-hover:bg-white transition-colors duration-500"
+                className="mt-8 flex items-center bg-white justify-between rounded-lg p-2 font-sans group-hover:text-[#f26522] transition-all ease-in-out bg-[#f4f7fe] text-base font-medium text-[#20227b] hover:bg-gray-50 group-hover:bg-white transition-colors duration-500"
               >
                 <span className="px-5">View More</span>
                 <span className="text-white p-2 rounded-md group-hover:bg-[#f26522] transition-all ease-in-out bg-[#20227b] text-xl">

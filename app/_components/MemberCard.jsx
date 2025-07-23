@@ -80,6 +80,45 @@ function MemberCard({ member }) {
           </a>
         </li>
       )}
+
+      {member.twitter && (
+  <li>
+    <a
+      href={member.twitter}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
+    >
+      {/* Twitter Icon */}
+      <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M23.954 4.569c-0.885 0.392-1.83 0.656-2.825 0.775 1.014-0.609 1.794-1.574 2.163-2.724-0.951 0.564-2.005 0.974-3.127 1.194-0.897-0.957-2.178-1.555-3.594-1.555-2.723 0-4.928 2.204-4.928 4.928 0 0.386 0.045 0.762 0.127 1.124-4.094-0.205-7.725-2.166-10.161-5.144-0.424 0.729-0.666 1.577-0.666 2.476 0 1.708 0.87 3.216 2.188 4.099-0.807-0.026-1.566-0.247-2.228-0.616v0.061c0 2.385 1.693 4.374 3.946 4.827-0.413 0.111-0.849 0.171-1.296 0.171-0.317 0-0.626-0.031-0.928-0.089 0.627 1.956 2.444 3.377 4.6 3.417-1.685 1.32-3.808 2.107-6.115 2.107-0.397 0-0.789-0.023-1.175-0.069 2.179 1.397 4.768 2.213 7.548 2.213 9.057 0 14.009-7.496 14.009-13.986 0-0.21-0.004-0.423-0.015-0.635 0.961-0.694 1.8-1.562 2.46-2.549z"/>
+      </svg>
+    </a>
+  </li>
+)}
+{member.email && (
+  <li>
+    <a
+      href={`mailto:${member.email}`}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
+    >
+      {/* Email Icon */}
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        className="h-5 w-5"
+        viewBox="0 0 24 24"
+        fill="currentColor"
+        aria-hidden="true"
+      >
+        <path d="M20 4H4C2.9 4 2 4.9 2 6v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 2v.01L12 13 4 6.01V6h16zM4 18V8.99l8 6 8-6V18H4z" />
+      </svg>
+    </a>
+  </li>
+)}
+
+
     </ul>
   </div>
 </div>
